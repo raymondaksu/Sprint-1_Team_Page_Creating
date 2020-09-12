@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #e4dede;
+}
+
+#img {
+  width: 18vw;
+  height: 32vh;
+  box-shadow: rgba(68, 156, 207, 0.5) 0px 0px 24px;
+  transition: width 0.5s, height 0.5s;
+}
+
+#img:hover {
+  width: 19vw;
+  height: 33vh;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
