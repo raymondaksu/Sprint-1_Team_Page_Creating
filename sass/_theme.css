@@ -5,7 +5,9 @@
   grid-template-rows: 1fr 3fr 3fr;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "header header header" "left-section__1 middle-section__1 right-section__1" "left-section__2 middle-section__2 right-section__2";
-  gap: 5px;
+  gap: 0;
+  background-image: url(./img/lm-cover.jpg);
+  background-size: cover;
 }
 
 .header {
@@ -26,11 +28,14 @@
 }
 
 .header-right {
-  width: 50vw;
+  width: 40vw;
+  background-color: transparent;
+  color: aliceblue;
 }
 
 #headline {
   padding: 7px;
+  background-color: transparent;
 }
 
 #headline:hover {
@@ -51,6 +56,7 @@ section {
   font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   padding-top: 10px;
+  color: black;
 }
 
 #text1 {
@@ -68,6 +74,7 @@ section {
 
 .img_AMT {
   align-items: center;
+  color: black;
 }
 
 .vertical_text {
@@ -75,6 +82,7 @@ section {
   text-orientation: sideways-right;
   font-family: 'Teko', sans-serif;
   font-size: 1.5rem;
+  color: black;
 }
 
 .img_vertical {
@@ -112,10 +120,9 @@ section {
   .container {
     width: 100%;
     height: auto;
-    grid-template-rows: 1fr 1.5fr 3fr 3fr 3fr;
+    grid-template-rows: 1fr 1.5fr 1fr 3fr 3fr 3fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "header header" "header header" "left-section__1 middle-section__1" "right-section__1 left-section__2" "middle-section__2 right-section__2";
-    gap: 5px;
+    grid-template-areas: "header header" "header header" "header header" "left-section__1 middle-section__1" "right-section__1 left-section__2" "middle-section__2 right-section__2";
   }
   .header {
     grid-area: header;
@@ -124,6 +131,7 @@ section {
     display: grid;
     grid-template-rows: subgrid;
     grid-template-columns: subgrid;
+    background-color: transparent;
   }
   .header-left {
     grid-row: 1/2;
@@ -137,12 +145,13 @@ section {
   }
   .header-right {
     width: 90%;
-    height: 25vh;
+    min-height: 100px;
     grid-row: 2/3;
     display: flex;
     flex-direction: column;
     text-align: justify;
     box-sizing: content-box;
+    color: aliceblue;
   }
   #text1 {
     font-family: 'Poppins', sans-serif;
@@ -171,6 +180,7 @@ section {
   }
   .middle-section__2 {
     grid-area: middle-section__2;
+    flex-direction: column;
   }
   .right-section__1 {
     grid-area: right-section__1;
@@ -178,5 +188,11 @@ section {
   .right-section__2 {
     grid-area: right-section__2;
     flex-direction: column-reverse;
+  }
+  #img {
+    grid-row: 3/4;
+    min-width: 30vw;
+    min-height: 150px;
+    max-height: 25vh;
   }
 }

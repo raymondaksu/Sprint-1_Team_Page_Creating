@@ -1,13 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: rgb(228, 222, 222);
+    background-color:rgba(222, 228, 222, 0.2);
 }
 
 #img {
     width: 18vw;
+    min-width: 180px;
+    min-height: 150px;
     height: 32vh;
-    box-shadow:rgba(68, 156, 207, 0.5) 0px 0px 24px; 
+    box-shadow:rgba(222, 228, 222, 0.2) 0px 0px 24px; 
     transition: width 0.5s, height 0.5s;
     &:hover {
         width: 19vw;
@@ -18,8 +20,9 @@
 
 a {
     text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
     &:hover {
         color: blue;
-        text-decoration: underline;
+        text-decoration: solid;
     }
 }
